@@ -1,0 +1,159 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(240, 237, 253, 0.939);
+    font-family: sans-serif;
+    display: flex;
+   justify-content: center;
+}
+
+.card{
+    background-color: white;
+    display:flex;
+    margin:10%;
+    border-radius: 3%;
+    align-self: center;
+    width:fit-content;
+    
+}
+
+
+h2 {
+    text-align: center;
+    margin-top: 5%;
+}
+
+p{
+    text-align: center;
+    font-weight: bold;
+}
+
+.social-login{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 15px;
+    grid-gap: 6px;
+}
+
+button{
+    background-color: white;
+    border-radius:5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(223, 224, 226, 0.906);
+}
+
+.google-btn{
+    grid-column: 1 / 3;
+    grid-row: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px; 
+}
+
+.fb-btn{
+    grid-column: 3/ 3;
+    grid-row: 1; 
+    width: 60px; 
+    padding: 8px;
+    height: 55px;
+}
+
+img {
+    width: 40px;
+    height: auto;
+  }
+
+
+.or::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    border: 1px solid rgba(223, 224, 226, 0.906);
+    left:15%;
+    margin-top: 12px;
+}
+
+
+.or::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    border: 1px solid rgba(223, 224, 226, 0.906);
+    right:15%;
+    margin-top: 12px;
+}
+
+.email-login{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    margin: 15px;
+    grid-gap: 6px;
+    color:rgb(34 36 40 / 51%);
+}
+
+input{
+    height: 40px;
+    border-radius: 5px;
+    border-color: rgba(236, 237, 239, 0.959);
+    text-align: left;
+    padding: 15px;
+    font-size: 12px;
+    color:rgba(233, 234, 237, 0.926);
+    
+}
+
+.cta-btn{
+    width: 80vw;
+    margin:14px;
+    height: 40px;
+    background-color: rgb(112, 7, 240);
+    color: white;
+    border-radius: 5px;
+    font-size: 11px;
+}
+
+.forget-pass{
+    text-decoration: none;
+    margin: 26vw;
+}
+
+  
+@media  screen and (min-width: 500px) {
+    .card{
+        width: 350px;
+    }
+      
+
+    .or::before {
+        
+        left: 42%;
+    }
+    
+    
+    .or::after {
+        right:42%;
+        
+    }
+    
+   
+    
+    .cta-btn{
+        width: 320px;
+        
+    
+}
+.forget-pass{
+    margin: 30%;
+}
+  
+
+}
+
+
+
